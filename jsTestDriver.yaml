@@ -1,0 +1,14 @@
+server: http://localhost:9876
+
+load:
+  - src/libs/jquery.js
+  - src/*.js
+
+test:
+  - tests/libs/sinon.js
+  - tests/*.js
+
+plugin:
+ - name: "coverage"
+   jar: "plugins/coverage.jar"
+   module: "com.google.jstestdriver.coverage.CoverageModule"
